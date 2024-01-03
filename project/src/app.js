@@ -75,6 +75,9 @@ app.get("/signup", (req, res) => {
       console.log(err);
     }
   });
+ app.post("/form", (req, res) => {
+    res.send("Your Response Successfully Generated !!");
+  })
 
 
   app.listen(port, () => {
